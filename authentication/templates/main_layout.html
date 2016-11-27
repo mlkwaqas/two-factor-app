@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        {% block title %}
+            <title>Welcome</title>
+        {% endblock %}
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <!-- style -->
+        {% include 'main_css.html' %}
+        {% block extra_css %}{% endblock %}
+        <!-- end style -->
+        
+        <!-- java script  -->
+        {% include 'main_javascript.html' %}
+        {% block extra_head_javascript %}{% endblock %}
+        <!-- java script -->
+        
+    </head>
+    <body>
+
+        {% block header %}{% endblock %}
+        {% block body %}{% endblock %}
+    </body>
+</html>

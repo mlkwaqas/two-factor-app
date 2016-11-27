@@ -1,0 +1,16 @@
+{% extends 'main_layout.html' %}
+{% load static %}
+
+{% block title %}
+    <title>Personal Info</title>
+{% endblock %}
+{% block header %}
+    {% include 'header.html' with page='home' %}
+{% endblock %}
+{% block body %}
+    <div class="container">
+        <h2>Welcome to Two-factor Authentication</h2>
+        <a href="/login" class="btn btn-primary">Login</a>
+        <a href="/register" class="btn btn-primary">Register</a>
+    </div>
+{% endblock %}
